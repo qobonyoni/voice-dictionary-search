@@ -1,0 +1,57 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --background: #ffffff;
+  --foreground: #171717;
+  --col: #03d47c;
+}
+
+@media (prefers-color-scheme: dark) {
+  :root {
+    --background: #1a3d32;
+    --foreground: #ededed;
+  }
+}
+
+body {
+  color: var(--foreground);
+  background: var(--background);
+  font-family: Arial, Helvetica, sans-serif;
+}
+
+
+.rotate-forever{
+  animation: spin 3s linear forwards infinite;
+}
+
+@keyframes spin {
+  0%{
+    transform: rotate(0);
+    
+  }
+  100%{
+    transform: rotate(359deg);
+  }
+  
+}
+
+
+.scroller::-webkit-scrollbar{
+  width: 4px;
+  
+}
+
+.scroller::-webkit-scrollbar-thumb{
+  @apply bg-secondary;
+
+border-radius: 4px;
+  
+}
+.scroller::-webkit-scrollbar-track{
+  @apply bg-accent;
+
+
+  
+}

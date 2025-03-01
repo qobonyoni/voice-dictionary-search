@@ -1,36 +1,71 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Voice Dictionary Search
 
-## Getting Started
+A web application that allows users to search for words using their voice. The app fetches word definitions from a dictionary API and displays the results.
 
-First, run the development server:
+## Features
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
+- ✅ Voice-based search for words  
+- ✅ Fetches word definitions from an API  
+- ✅ Next.js App Router for optimized routing  
+- ✅ Server Actions for improved data handling  
+- ✅ Error handling with dedicated error components  
+
+## Tech Stack
+
+- **Frontend:** React, Next.js, Tailwind CSS  
+- **Backend:** Next.js Server Actions  
+- **API:** Dictionary API  
+- **State Management:** useState, useEffect  
+- **Deployment:** Vercel (or your choice)  
+
+## Installation & Setup
+
+### Clone the repository:
+
+```sh
+git clone https://github.com/qobonyoni/voice-dictionary-search.git
+cd voice-dictionary
 ```
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+### Install dependencies:
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+```sh
+npm install  # or yarn install
+```
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
 
-## Learn More
+### Run the development server:
 
-To learn more about Next.js, take a look at the following resources:
+```sh
+npm run dev  # or yarn dev
+```
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+Open [http://localhost:3000](http://localhost:3000) in your browser.
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+## Usage
 
-## Deploy on Vercel
+1. Click the microphone button to start voice input or type in the search word and click enter.
+2. The app will process your speech, fetch the definition, and display it.
 
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
 
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+## Challenges & Lessons Learned
+
+### Routing in Next.js
+As someone new to the Next.js App Router, getting used to the new file structure took some time, but it has been a smooth experience so far.
+
+### Error Handling
+With Next.js, it is easier to define error boundaries and handle unexpected failures.
+
+### `'use client'` vs. `'use server'`
+I initially struggled with this concept, but I learned that any component requiring event listeners should use `'use client'`.
+
+## Future Improvements
+
+- Implement caching for faster searches  
+- Add suggestions for misspelled words  
+- Improve UI/UX with better animations  
+
+## Contributing
+
+Feel free to submit issues and pull requests.
+

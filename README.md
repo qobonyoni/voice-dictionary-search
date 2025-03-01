@@ -2,6 +2,20 @@
 
 A web application that allows users to search for words using their voice. The app fetches word definitions from a dictionary API and displays the results.
 
+##Live Site 
+
+-[Live Site Here](https://voice-dictionary-search.vercel.app/)
+
+### Screenshots
+
+#### 📸 Desktop
+
+![](./screenshots/desktopDictionary.png)
+
+#### 📸 Mobile 
+
+![](./screenshots/mobileDictionary.png)
+
 ## Features
 
 - ✅ Voice-based search for words  
@@ -16,7 +30,7 @@ A web application that allows users to search for words using their voice. The a
 - **Backend:** Next.js Server Actions  
 - **API:** Dictionary API  
 - **State Management:** useState, useEffect  
-- **Deployment:** Vercel (or your choice)  
+- **Deployment:** Vercel 
 
 ## Installation & Setup
 

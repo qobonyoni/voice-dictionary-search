@@ -10,7 +10,7 @@ A web application that allows users to search for words using their voice. The a
 
 #### 📸 Desktop
 
-![](./screenshots/desktopDictionary.png)
+![](./screenshots/desktopDicitonary.png)
 
 #### 📸 Mobile 
 
